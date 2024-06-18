@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz JavaScript</title>
+</head>
+<body>
+    <div class="kuizContainer">
+        <header>
+            <div>
+                <a href="./rezultatet.html">
+                    <button class="rez-headeri" id="rezultatet">
+                        Shiko Rezultatet
+                    </button>
+                </a>
+            </div>
+
+            <div class="timer">
+                <p>
+                    Time: 
+                    <span id="timer">
+                        0
+                    </span>
+                </p>
+            </div>
+        </header>
+
+        <main class="quiz">
+            <div id="quiz-start">
+                <div class="fillimi" id="start-quiz">
+                    <h1 id="titulli">JavaScript Quiz</h1>
+                    <h1>Coding Quiz Challenge</h1>
+                    <p>
+                        Mundohu t'iu përgjigjesh pyetjeve të kuizit brenda kohës së limituar (75 sekonda).
+                        <br>
+                        Keni kujdes!
+                        <br>
+                        Cdo përgjigje gabim do t'iu zvogëlojë kohën për 10 sekonda! 
+                    </p>
+                    <button id="start">
+                        START
+                    </button>
+                </div>
+            </div>
+
+            <div class="hide" id="questions">
+                <h2 id="question-words"></h2>
+                <div class="options" id="options">
+
+                </div>
+            </div>
+
+            <div class="hide" id="quiz-end">
+                <h2>All Done!</h2>
+                <p>Your final score is:
+                    <span id="score-final">
+                    </span>
+                </p>
+                <p>
+                    Please enter your name:
+                    <input type="text" 
+                           id="name" 
+                           max="3" />
+                    <button id="submit-score">
+                        Submit
+                    </button>
+                </p>
+            </div>
+
+            <div id="feedback" 
+                 class="feedback hide">
+            </div>
+        </main>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
