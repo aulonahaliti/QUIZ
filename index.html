@@ -39,6 +39,7 @@
                         <br>
                         Cdo përgjigje gabim do t'iu zvogëlojë kohën për 10 sekonda! 
                     </p>
+                    <img class="fotoja" src="images/quiz.png" alt="">
                     <button id="start">
                         START
                     </button>
@@ -47,31 +48,23 @@
 
             <div class="hide" id="questions">
                 <h2 id="question-words"></h2>
-                <div class="options" id="options">
-
-                </div>
+                <img id="question-image" src="" style="display: none;" alt="Question Image">
+                <div class="options" id="options"></div>
             </div>
 
             <div class="hide" id="quiz-end">
                 <h2>All Done!</h2>
                 <p>Your final score is:
-                    <span id="score-final">
-                    </span>
+                    <span id="score-final"></span>
                 </p>
                 <p>
                     Please enter your name:
-                    <input type="text" 
-                           id="name" 
-                           max="3" />
-                    <button id="submit-score">
-                        Submit
-                    </button>
+                    <input type="text" id="name" max="3" />
+                    <button id="submit-score">Submit</button>
                 </p>
             </div>
 
-            <div id="feedback" 
-                 class="feedback hide">
-            </div>
+            <div id="feedback" class="feedback hide"></div>
         </main>
     </div>
     <script src="./script.js"></script>
