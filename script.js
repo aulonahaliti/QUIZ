@@ -231,9 +231,6 @@ function saveHighscore() {
             "highscores",
             JSON.stringify(highscores)
         );
-        alert(
-            "Your Score has been Submitted"
-        );
     }
 }
 
